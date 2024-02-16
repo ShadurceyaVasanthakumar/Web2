@@ -1,0 +1,199 @@
+<!-- IM/2020/062-Shadurceya Vasanthakumar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>IOT - Internet of Things</h1>
+    </div >
+    <div class="slide-im">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <div class="slide first">
+                <img src="IM/1658400820592.png" alt="">
+            </div>
+            <div class="slide ">
+                <img src="im/91629.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="IM/0_QxsWlMTDGmTebavF.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="IM/thanit2022february_53.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="IM/sensor-icons-internet-things-iot-sensors.png" alt="">
+            </div>
+        </div>
+        <div class="navi-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+   </div>
+
+   <div class="intro">
+        <h2>What is IOT?</h2>
+        <div class="intro-1">
+        <p>One of the most dynamic and exciting developments in information and communications technology 
+            is the advent of the Internet of Things (IoT). Although networking technologies have become 
+            increasingly ubiquitous over the past two decades, until recently they have largely been restricted 
+            to connecting traditional end-user devices, such as mainframes, desktop and laptop computers, and, 
+            more recently, smartphones and tablets.
+        The Internet of Things (IoT) is the ability to have devices communicate with one another via the internet 
+            or other networks, remotely tracking information to provide feedback to assist with decision making for 
+            commercial, industrial and residential purposes. This is commonly done using sensors connecting to a 
+            back-to-base system.</p>
+        <p>IoT is a system of Internet-connected devices. These devices are essentially mini-computer processors
+             that use machine learning to act on data collected by sensors. IoT devices can range from smart warehouse 
+             vehicles to fitness trackers to cold storage temperature monitors. 
+        the Internet of Things is a massive network of connected devices, and that network is growing by the minute.
+             Today, there are more than 50 billion IoT devices deployed. This massive network of devices, in turn, 
+             generates and communicates data with other connected devices or systems. The communication of data is
+              key to the value in IoT, allowing consumers or businesses to access raw information, gain insight, and 
+              make an intelligent decision based on the story the data tells.</p>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="box">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/h0gWfVCSGQQ?autoplay=1&mute=1"> </iframe>
+                    <div class="content1">
+                     <p>This "IoT Tutorial For Beginners"  video by Edureka will help you grasp the basic concepts of Internet of Things & explains, how IoT is trying to revolutionize the world</p>
+                       <div class="btn">
+                        <a href="#" class="watch">watch </a>
+                       </div>
+                    </div>
+        </div>
+    </div>
+    <div class="bigData">
+        <div class="content2" >
+             <h2>What is Big Data?</h2>
+             <p>Big data refers to the large, diverse sets of information that grow at ever-increasing rates.
+                 It encompasses the volume of information, the velocity or speed at which it is created and collected,
+                  and the variety or scope of the data points being covered (known as the "three v's" of big data). 
+                  Big data often comes from data mining and arrives in multiple formats.</p>
+             <p>Companies use big data in their systems to improve operations, provide better customer service, create personalized
+                 marketing campaigns and take other actions that, ultimately, can increase revenue and profits. Businesses that use 
+                 it effectively hold a potential competitive advantage over those that don't because they're able to make faster and 
+                 more informed business decisions.</p>
+                
+        </div>
+            <img id="cont" src="IM/1357.jpg" alt="">
+            <button id="increaseBtn">+</button>
+            <button id="decreaseBtn">-</button>
+        
+    </div>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="mov">
+    <img id="movingImage" src="IM/Vector_2646.jpg" alt="Image" class="start-position">
+</div>
+
+
+<script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked =true;
+        counter++;
+        if(counter>5){
+            counter=1;
+        }
+    },6000);
+    
+  const img = document.getElementById("cont");
+  const increaseBtn = document.getElementById("increaseBtn");
+  const decreaseBtn = document.getElementById("decreaseBtn");
+
+  let currentSize = 350;
+
+  increaseBtn.addEventListener("click", () => {
+    currentSize += 50; // Increase the size by 50 pixels
+    img.style.width = currentSize + "px";
+  });
+
+  decreaseBtn.addEventListener("click", () => {
+    currentSize -= 50; // Decrease the size by 50 pixels
+    img.style.width = currentSize + "px";
+  });
+
+  function validateForm() {
+  const name = document.getElementById('name').value;
+  const telephone = document.getElementById('telephone').value;
+  const email = document.getElementById('email').value;
+
+  const namePattern = /^[A-Za-z\s]+$/;
+  const telephonePattern = /^[0-9]{10}$/;
+  const emailPattern = /^\S+@\S+\.\S+$/;
+
+  if (!namePattern.test(name)) {
+    alert('Please enter a valid name.');
+    return false;
+  }
+
+  if (!telephonePattern.test(telephone)) {
+    alert('Please enter a valid 10-digit telephone number.');
+    return false;
+  }
+
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+
+  alert('Form submitted successfully!');
+  return true;
+}
+
+var imgObj = null;
+    function init(){
+        imgObj = document.getElementById('movingImage');
+        imgObj.style.position= 'relative';
+        imgObj.style.left = '0px';
+
+        imgObj.addEventListener('click', moveRight);
+    }   
+    function moveRight(){
+        imgObj.style.left = parseInt(imgObj.style.left) + 700 + 'px';
+    }
+    window.onload =init;
+    
+
+</script>
+</body>
+</html>
